@@ -1,0 +1,26 @@
+Projeto de Sistema de Gerenciamento de Escola
+
+O objetivo deste projeto é desenvolver um sistema para gerenciamento de uma instituição de ensino, permitindo o registro e a consulta de informações sobre estudantes, professores, turmas e notas. O sistema deve fornecer funcionalidades para:
+
+Estudantes: Registrar e gerenciar informações sobre os estudantes, incluindo nome, data de nascimento e turma.
+Professores: Registrar e gerenciar informações sobre os professores, incluindo nome e disciplina lecionada.
+Turmas: Criar e gerenciar turmas, associando um professor a cada uma delas.
+Notas: Atribuir e gerenciar notas para os estudantes em suas respectivas turmas.
+Estrutura do Banco de Dados
+O banco de dados eescola contém as seguintes tabelas:
+
+estudante: Armazena as informações dos estudantes (ID, nome, data de nascimento, turma).
+professor: Armazena as informações dos professores (ID, nome, disciplina).
+turma: Armazena as informações das turmas (ID, nome da turma, ID do professor).
+nota: Armazena as notas dos estudantes (ID, ID do estudante, ID da turma, nota).
+Instruções de Uso
+Criar o Banco de Dados: O script cria o banco de dados eescola se ele não existir e utiliza este banco para as operações subsequentes.
+Criar Tabelas: O script cria as tabelas estudante, professor, turma e nota, definindo as colunas e seus tipos de dados.
+Inserir Dados: O script insere exemplos de dados nas tabelas de estudantes e professores, bem como nas turmas e notas.
+Requisitos
+MySQL ou MariaDB instalado.
+Acesso a um terminal para executar os comandos SQL.
+Como Executar
+Copie e cole o script SQL em um cliente MySQL.
+Execute as instruções em sequência.
+Verifique se os dados foram criados corretamente.
