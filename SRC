@@ -1,0 +1,82 @@
+create database eescola;
+use eescola;
+
+create table if not exists estudante (
+id_estudante int auto_increment primary key,
+nome varchar(100),
+data_nascimento varchar(100),
+turma varchar(50)
+);
+
+create table if not exists professor (
+id_porfessor int auto_increment primary key,
+nome varchar(100),
+disciplina varchar(100)
+);
+
+create table if not exists turma (
+id_turma int auto_increment primary key,
+nome_turma varchar(100),
+id_professor int
+);
+
+create table if not exists nota (
+id_nota int auto_increment primary key,
+id_ewstudante int,
+id_turma int,
+nota decimal(10,2)
+);
+
+insert into estudante(nome, data_nascimento, turma) values
+("isabela","08-06-11","100"),
+("cintya","08-12-22","102"),
+("danyele","09-03-06","102"),
+("marcelo","08-07-07","101"),
+("mikael","09-02-18","102"),
+("jose","08-10-23","101"),
+("bruno","07-07-13","201"),
+("amanda","07-05-06","202"),
+("henrique","09-01-16","201"),
+("thalita","08-12-23","100"),
+("giovana","06-06-29","201"),
+("mateus","06-03-21","301"),
+("kauan","08-04-31","301"),
+("carlos","09-08-27","202"),
+("alanis","06-02-12","101");
+
+insert into professor (nome, disciplina) values
+("lucas","historia"),
+("ana claudia","portugues"),
+("luziane","artes"),
+("janete","bilogia"),
+("gerson","matematica"),
+("alvaro","quimica");
+
+insert into turma (nome_turma) values
+("empreendedorismo"),
+("boxe"),
+("teatro"),
+("informatica");
+
+insert into nota(nota) values 
+("10"),
+("9"),
+("8"),
+("7"),
+("6"),
+("5"),
+("4"),
+("3"),
+("2"),
+("1"),
+("10"),
+("9"),
+("8"),
+("7"),
+("6"),
+("5"),
+("4"),
+("3"),
+("2"),
+("1"),
+("10");
