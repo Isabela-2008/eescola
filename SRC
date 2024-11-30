@@ -17,14 +17,17 @@ disciplina varchar(100)
 create table if not exists turma (
 id_turma int auto_increment primary key,
 nome_turma varchar(100),
-id_professor int
+id_professor int,
+foreign key (id_professor) references professor(id_professor)
 );
 
 create table if not exists nota (
 id_nota int auto_increment primary key,
-id_ewstudante int,
+id_estudante int,
 id_turma int,
-nota decimal(10,2)
+nota decimal(10,2),
+foreign key (id_estudante) refrences estudante (id_estudante),
+foreign key (id_turma) refrences turma (id_turma)
 );
 
 insert into estudante(nome, data_nascimento, turma) values
